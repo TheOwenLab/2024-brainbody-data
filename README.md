@@ -30,7 +30,7 @@ $ pip3 install datalad datalad-osf datalad-dataverse
 $ git config --global --add datalad.extensions.load next
 $ git config --global --add datalad.extensions.load dataverse
 
-$ datalad clone osf://vq2wx/ brainbodydata
+$ datalad clone osf://6fmcw brainbodydata
 $ cd brainbodydata
 $ pip3 install -e .
 ```
@@ -51,7 +51,7 @@ Instantiating an object from one of these classes will clone the raw data file(s
 For example:
 
 ```
-paaq = PAAQ(dl_rendered="disabled")  # I don't want to see the Datalad output
+paaq = PAAQ()
 paaq.data.head()
 ```
 
